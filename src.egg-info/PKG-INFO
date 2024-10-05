@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: src
+Version: 1.39.0
+Summary: A small package for Movie Recommender System
+Home-page: https://github.com/syedshayanshahid/Movie-Recommender-System-Project
+Author: syedshayanshahid
+Author-email: shayansynshahid@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+
+Movies Recommendation System
