@@ -39,6 +39,15 @@ def recommend(movie):
     return recommended_movie_names, recommended_movie_posters
 
 st.header('🎬 Movie Recommender System Using Machine Learning 🍿')
+
+file_path = os.path.join('artifacts', 'movies.pkl', 'similarity.pkl')
+
+try:
+    with gzip.open(file_path, 'rb') as f:
+        movies = pickle.load(f)
+except FileNotFoundError:
+    print(f"Error: The file '{file_path}' does not exist.")
+
 with gzip.open(r'D:\Desktop Folders\PGD Batch 6\FINAL ML PROJECT\artifacts\movies.pkl', 'rb') as f:
     movies = pickle.load(f)
 
