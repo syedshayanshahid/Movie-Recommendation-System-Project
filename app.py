@@ -48,10 +48,10 @@ try:
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' does not exist.")
 
-with gzip.open(r'D:\Desktop Folders\PGD Batch 6\FINAL ML PROJECT\artifacts\movies.pkl', 'rb') as f:
+with gzip.open('artifacts/movies.pkl', 'rb') as f:
     movies = pickle.load(f)
 
-with gzip.open(r'D:\Desktop Folders\PGD Batch 6\FINAL ML PROJECT\artifacts\similarity.pkl', 'rb') as f:
+with gzip.open('artifacts/similarity.pkl', 'rb') as f:
     similarity = pickle.load(f)
 
 movie_titles = movies['title'].values
