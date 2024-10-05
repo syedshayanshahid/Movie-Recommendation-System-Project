@@ -5,6 +5,7 @@ Email: shayansynshahid@gmail.com
 Batch: PGD Batch 6 Data Science with Articficial Intelligence
 '''
 
+import os
 import pickle
 import streamlit as st
 import requests
