@@ -2,7 +2,6 @@ pip install streamlit
 pip install --upgrade pip
 pip install -r requirements.txt
 
-streamlit
 requests
 pickle
 
