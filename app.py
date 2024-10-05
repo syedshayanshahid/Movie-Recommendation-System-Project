@@ -41,7 +41,7 @@ def recommend(movie):
 
 st.header('🎬 Movie Recommender System Using Machine Learning 🍿')
 
-file_path = os.path.join('artifacts', 'movies.pkl', 'similarity.pkl')
+file_path = os.path.join('artifacts', 'movies.pkl')
 
 try:
     with gzip.open(file_path, 'rb') as f:
